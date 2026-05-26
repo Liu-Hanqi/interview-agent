@@ -64,4 +64,4 @@ Thumbs.db
 # Project specific
 *.log
 scratch/
-notes/
+notes/uv.lock
