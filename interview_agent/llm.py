@@ -1,10 +1,10 @@
-"""LLM client wrapper for Anthropic API."""
+"""LLM client wrapper — MiniMax via Anthropic-compatible endpoint."""
 
 import os
 from dataclasses import dataclass
 from typing import Literal
 
-from anthropic import Anthropic
+import anthropic
 
 
 @dataclass
@@ -13,11 +13,14 @@ class LLMResponse:
     usage: dict
 
 
-def _get_client() -> Anthropic:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+def _get_client() -> anthropic.Anthropic:
+    api_key = os.environ.get("MINIMAX_CN_API_KEY") or os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
-        raise ValueError("ANTHROPIC_API_KEY not set")
-    return Anthropic(api_key=api_key)
+        raise ValueError("MINIMAX_CN_API_KEY not set")
+    base_url = os.environ.get(
+        "MINIMAX_CN_BASE_URL", "https://api.minimaxi.com/v1"
+    )
+    return anthropic.Anthropic(api_key=api_key, base_url=base_url)
 
 
 def generate(
@@ -26,20 +29,14 @@ def generate(
     model: Literal["claude-sonnet", "claude-haiku"] = "claude-sonnet",
     json_mode: bool = False,
 ) -> LLMResponse:
-    """Call Anthropic API and return raw response.
-
-    Args:
-        system: system prompt
-        user: user message
-        model: which model to use
-        json_mode: if True, ask model to output JSON and parse it
-    """
+    """Call MiniMax API via Anthropic-compatible endpoint."""
     client = _get_client()
 
-    actual_model = {
-        "claude-sonnet": "claude-sonnet-4-20250514",
-        "claude-haiku": "claude-3-haiku-20250517",
-    }.get(model, model)
+    model_map = {
+        "claude-sonnet": "MiniMax-M2.7",
+        "claude-haiku": "MiniMax-M2.7",
+    }
+    actual_model = model_map.get(model, "MiniMax-M2.7")
 
     extra_kwargs = {}
     if json_mode:
@@ -53,8 +50,15 @@ def generate(
         **extra_kwargs,
     )
 
+    # MiniMax may return ThinkingBlock + TextBlock; find the text answer
+    text_block = next(
+        (b for b in message.content if b.type == "text"),
+        message.content[-1] if message.content else None,
+    )
+    raw = text_block.text if text_block else ""
+
     return LLMResponse(
-        raw=message.content[0].text,
+        raw=raw,
         usage={
             "input_tokens": message.usage.input_tokens,
             "output_tokens": message.usage.output_tokens,
