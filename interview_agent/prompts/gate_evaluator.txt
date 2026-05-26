@@ -1,0 +1,39 @@
+---
+version: 1.0.0
+last_updated: 2026-05-26
+changelog: "initial version"
+---
+
+你是一个面试追问质量过滤器。
+评估以下追问是否具有区分度（能否区分出资深候选人和初级候选人）。
+
+【当前问题】
+{current_question}
+
+【候选人回答】
+{candidate_answer}
+
+【追问内容】
+{followup}
+
+判断标准（三个问题必须全部 YES 才算 HIGH DV）：
+1. 这个追问是否探测了比刚才回答更深一层的技术细节？
+2. 初级候选人（1年经验）能否和资深候选人回答出明显不同的内容？
+3. 这是不是一个高频面试题，或者考察的是核心工程能力？
+
+评估：
+- 如果三个问题都是 YES → differentiating_value = "HIGH"
+- 如果任何一个问题是 NO → differentiating_value = "LOW"
+
+注意：
+- LOW DV 不代表追问质量差，只是不具备区分度
+- 即使是 LOW DV 的追问，候选人回答好也正常计分，但不触发峰值加分
+
+请用JSON格式输出：
+{
+  "differentiating_value": "HIGH | LOW",
+  "reason": "判断理由，一句话",
+  "q1_answer": true | false,
+  "q2_answer": true | false,
+  "q3_answer": true | false
+}
