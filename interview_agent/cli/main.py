@@ -69,8 +69,8 @@ def start_interview(profile: str, pool: str = "algorithm") -> dict:
     visited_pools = set()
 
     while True:
-        # Select + Ask
-        state = app.invoke("select_question", state)
+        # Select + Ask — pass state dict, LangGraph routes from __start__ to entry point
+        state = app.invoke(state)
         state = app.invoke("ask_question", state)
 
         if state["current_pool"] not in visited_pools:

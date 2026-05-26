@@ -1,9 +1,8 @@
-"""
-Prompt loader with runtime override support.
-"""
+"""Prompt loader with runtime override support."""
 
+import re
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 
 def _get_prompt_dir() -> Path:
@@ -11,15 +10,7 @@ def _get_prompt_dir() -> Path:
 
 
 def load_prompt(name: str, override: Optional[str] = None) -> str:
-    """Load a prompt from file, with optional runtime override.
-
-    Args:
-        name: prompt filename without .txt (e.g. "interviewer_system")
-        override: if provided, use this string instead of file content
-
-    Returns:
-        prompt text
-    """
+    """Load a prompt from file, with optional runtime override."""
     if override is not None:
         return override
     path = _get_prompt_dir() / f"{name}.txt"
@@ -28,31 +19,30 @@ def load_prompt(name: str, override: Optional[str] = None) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def render(system_name: str, user_message: str, **kwargs) -> dict:
-    """Render a prompt with variables injected into both system and user.
+def render(system_name: str, user_message: str, **kwargs: Any) -> dict[str, str]:
+    """Render a prompt with variables injected.
 
-    Returns a dict with 'system' and 'user' keys suitable for
-    anthropic API calls.
-
-    Args:
-        system_name: prompt file name without .txt
-        user_message: user message template with {var} placeholders
-        **kwargs: variable values to inject into templates
+    Uses regex substitution instead of str.format() to avoid conflicts
+    with JSON/brace characters in variable values.
     """
-    system_raw = load_prompt(system_name)
-    # Strip YAML frontmatter before injecting variables
-    lines = system_raw.split("\n")
-    if lines[0].strip() == "---":
-        # Find closing ---
-        end = 1
-        for i, line in enumerate(lines[1:], 1):
-            if line.strip() == "---":
-                end = i
-                break
-        body = "\n".join(lines[end + 1 :])
-    else:
-        body = system_raw
+    body_raw = load_prompt(system_name)
 
-    system = body.format(**kwargs)
-    user = user_message.format(**kwargs)
+    # Strip YAML frontmatter
+    lines = body_raw.split("\n")
+    if lines[0].strip() == "---":
+        end = next((i for i, l in enumerate(lines[1:], 1) if l.strip() == "---"), None)
+        body = "\n".join(lines[end + 1 :]) if end is not None else body_raw
+    else:
+        body = body_raw
+
+    # Replace {var} placeholders via regex
+    def replace_placeholder(match: re.Match) -> str:
+        key = match.group(1)
+        if key not in kwargs:
+            raise KeyError(key)
+        return str(kwargs[key])
+
+    system = re.sub(r"\{(\w+)\}", replace_placeholder, body)
+    user = re.sub(r"\{(\w+)\}", replace_placeholder, user_message)
+
     return {"system": system, "user": user}

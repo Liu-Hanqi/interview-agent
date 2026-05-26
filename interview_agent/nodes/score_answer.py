@@ -17,14 +17,34 @@ def _format_history(history: list[Turn]) -> str:
     return "\n".join(lines)
 
 
-def _parse_score(raw: str) -> dict:
+def _parse_json_response(raw: str) -> dict:
+    """Parse JSON from LLM response, handling non-JSON and partial responses."""
     text = raw.strip()
-    for fence in ("```json", "```JSON", "```"):
-        if text.startswith(fence):
-            text = text[len(fence) :]
-        if text.endswith(fence):
-            text = text[:-len(fence)]
-    return json.loads(text.strip())
+    if not text:
+        return {}
+
+    # Try direct parse first
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # Try to extract JSON from markdown code fences
+    import re
+    match = re.search(r"\{[^{}]*\}", text, re.DOTALL)
+    if match:
+        try:
+            return json.loads(match.group())
+        except json.JSONDecodeError:
+            pass
+
+    # Try broader extraction - find first { to last }
+    try:
+        start = text.index("{")
+        end = text.rindex("}") + 1
+        return json.loads(text[start:end])
+    except (ValueError, json.JSONDecodeError):
+        return {}
 
 
 def score_answer(state: InterviewState) -> InterviewState:
@@ -61,7 +81,7 @@ def score_answer(state: InterviewState) -> InterviewState:
         model="claude-haiku",
         json_mode=True,
     )
-    gate_result = _parse_score(gate_resp.raw)
+    gate_result = _parse_json_response(gate_resp.raw)
     dv = gate_result.get("differentiating_value", "LOW")
 
     # Score: evaluate this answer
@@ -79,7 +99,7 @@ def score_answer(state: InterviewState) -> InterviewState:
         model="claude-sonnet",
         json_mode=True,
     )
-    score_result = _parse_score(score_resp.raw)
+    score_result = _parse_json_response(score_resp.raw)
 
     # Aggregate scores
     score_delta = score_result.get("score_delta", {})

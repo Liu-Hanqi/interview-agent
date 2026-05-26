@@ -40,7 +40,8 @@ def generate(
 
     extra_kwargs = {}
     if json_mode:
-        extra_kwargs["response_format"] = {"type": "json_object"}
+        # MiniMax does not support response_format; prompt instructs JSON instead
+        pass
 
     message = client.messages.create(
         model=actual_model,
