@@ -1,0 +1,316 @@
+[
+  {
+    "id": "计算机网络-001",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "计算机网络基础？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-002",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "网络分层模型？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "TCP"
+    ]
+  },
+  {
+    "id": "计算机网络-003",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "常见网络协议？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-004",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️从输入 URL 到页面展示到底发生了什么？（非常重要）",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-005",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️HTTP 状态码有哪些？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-006",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "HTTP Header 中常见的字段有哪些？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-007",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️HTTP 和 HTTPS 有什么区别？（重要）",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTPS",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-008",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "HTTPS 握手里的 RSA 和 ECDHE，到底差在哪？（应用层）",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTPS",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-009",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️有了HTTP，为什么还要RPC？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-010",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "HTTP/1.0 和 HTTP/1.1 有什么区别？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-011",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️HTTP/1.1 和 HTTP/2.0 有什么区别？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "TCP",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-012",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "HTTP/2.0 和 HTTP/3.0 有什么区别？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP",
+      "栈"
+    ]
+  },
+  {
+    "id": "计算机网络-013",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "HTTP/1.1 和 HTTP/2.0 的队头阻塞有什么不同？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "TCP",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-014",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️HTTP 是不保存状态的协议, 如何保存用户状态?",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-015",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "URI 和 URL 的区别是什么?",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-016",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "Cookie 和 Session 有什么区别？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-017",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️GET 和 POST 的区别？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-018",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "WebSocket？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-019",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "什么是 WebSocket?",
+    "knowledge_anchors": [
+      "计算机网络",
+      "TCP",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-020",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️WebSocket 和 HTTP 有什么区别？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "TCP",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-021",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "WebSocket 的工作过程是什么样的？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-022",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️WebSocket 与短轮询、长轮询的区别？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-023",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️SSE 与 WebSocket 有什么区别？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "HTTP"
+    ]
+  },
+  {
+    "id": "计算机网络-024",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "PING 命令的作用是什么？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-025",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "PING 命令的工作原理是什么？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-026",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "DNS 的作用是什么？",
+    "knowledge_anchors": [
+      "计算机网络",
+      "TCP",
+      "UDP"
+    ]
+  },
+  {
+    "id": "计算机网络-027",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "DNS 服务器有哪些？根服务器有多少个？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-028",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "⭐️DNS 解析的过程是什么样的？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  },
+  {
+    "id": "计算机网络-029",
+    "pool": "fundamentals",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "seed": "DNS 劫持了解吗？如何应对？",
+    "knowledge_anchors": [
+      "计算机网络"
+    ]
+  }
+]

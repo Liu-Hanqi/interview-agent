@@ -1,0 +1,86 @@
+[
+  {
+    "id": "https-001",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#TLS æ¡æè¿ç¨？",
+    "knowledge_anchors": [
+      "https",
+      "tcp",
+      "http"
+    ]
+  },
+  {
+    "id": "https-002",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#RSA æ¡æè¿ç¨？",
+    "knowledge_anchors": [
+      "https"
+    ]
+  },
+  {
+    "id": "https-003",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#TLS ç¬¬ä¸æ¬¡æ¡æ？",
+    "knowledge_anchors": [
+      "https"
+    ]
+  },
+  {
+    "id": "https-004",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#TLS ç¬¬äºæ¬¡æ¡æ？",
+    "knowledge_anchors": [
+      "https"
+    ]
+  },
+  {
+    "id": "https-005",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#å®¢æ·ç«¯éªè¯è¯ä¹¦？",
+    "knowledge_anchors": [
+      "https"
+    ]
+  },
+  {
+    "id": "https-006",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#TLS ç¬¬ä¸æ¬¡æ¡æ？",
+    "knowledge_anchors": [
+      "https",
+      "http"
+    ]
+  },
+  {
+    "id": "https-007",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#TLS ç¬¬åæ¬¡æ¡æ？",
+    "knowledge_anchors": [
+      "https",
+      "http"
+    ]
+  },
+  {
+    "id": "https-008",
+    "pool": "fundamentals",
+    "category": "https",
+    "difficulty": "medium",
+    "seed": "#RSA ç®æ³çç¼ºé·？",
+    "knowledge_anchors": [
+      "https"
+    ]
+  }
+]

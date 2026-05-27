@@ -1,0 +1,198 @@
+[
+  {
+    "id": "并发-001",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "⭐️什么是线程和进程?",
+    "knowledge_anchors": [
+      "并发",
+      "堆",
+      "栈"
+    ]
+  },
+  {
+    "id": "并发-002",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "Java 线程和操作系统的线程有啥区别？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-003",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "⭐️请简要描述线程与进程的关系,区别及优缺点？",
+    "knowledge_anchors": [
+      "并发",
+      "堆",
+      "栈"
+    ]
+  },
+  {
+    "id": "并发-004",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "如何创建线程？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-005",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "⭐️说说线程的生命周期和状态?",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-006",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "什么是线程上下文切换?",
+    "knowledge_anchors": [
+      "并发",
+      "栈"
+    ]
+  },
+  {
+    "id": "并发-007",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "Thread#sleep() 方法和 Object#wait() 方法对比？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-008",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "为什么 wait() 方法不定义在 Thread 中？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-009",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "可以直接调用 Thread 类的 run 方法吗？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-010",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "并发与并行的区别？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-011",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "同步和异步的区别？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-012",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "⭐️为什么要使用多线程?",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-013",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "⭐️单核 CPU 支持 Java 多线程吗？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-014",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "⭐️单核 CPU 上运行多个线程效率一定会高吗？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-015",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "使用多线程可能带来什么问题?",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-016",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "如何理解线程安全和不安全？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-017",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "什么是线程死锁？",
+    "knowledge_anchors": [
+      "并发",
+      "synchronized"
+    ]
+  },
+  {
+    "id": "并发-018",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "如何检测死锁？",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  },
+  {
+    "id": "并发-019",
+    "pool": "fundamentals",
+    "category": "并发",
+    "difficulty": "medium",
+    "seed": "如何预防和避免线程死锁?",
+    "knowledge_anchors": [
+      "并发"
+    ]
+  }
+]

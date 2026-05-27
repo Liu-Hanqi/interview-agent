@@ -1,0 +1,150 @@
+[
+  {
+    "id": "ip-001",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#åè ââ IP åºæ¬è®¤è¯？",
+    "knowledge_anchors": [
+      "tcp",
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-002",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#ä¸»è ââ IP å°åçåºç¡ç¥è¯？",
+    "knowledge_anchors": [
+      "tcp",
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-003",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#IP å°åçåç±»？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-004",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#æ åç±»å°å CIDR？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-005",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#å¬æ IP å°åä¸ç§æ IP å°å？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-006",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#IP å°åä¸è·¯ç±æ§å¶？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-007",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#IP åçä¸éç»？",
+    "knowledge_anchors": [
+      "tcp",
+      "udp",
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-008",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#IPv6 åºæ¬è®¤è¯？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-009",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#IPv4 é¦é¨ä¸ IPv6 é¦é¨？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-010",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#ç¹å¿ ââ IP åè®®ç¸å³ææ¯？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-011",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#DHCP？",
+    "knowledge_anchors": [
+      "udp",
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-012",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#ICMP？",
+    "knowledge_anchors": [
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-013",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#IGMP？",
+    "knowledge_anchors": [
+      "tcp",
+      "ip"
+    ]
+  },
+  {
+    "id": "ip-014",
+    "pool": "fundamentals",
+    "category": "ip",
+    "difficulty": "medium",
+    "seed": "#è¯»èé®ç­？",
+    "knowledge_anchors": [
+      "socket",
+      "udp",
+      "ip"
+    ]
+  }
+]

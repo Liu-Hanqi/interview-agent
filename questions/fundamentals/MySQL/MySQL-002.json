@@ -1,0 +1,93 @@
+[
+  {
+    "id": "MySQL-051",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️MySQL 性能优化？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-052",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "能用 MySQL 直接存储文件（比如图片）吗？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-053",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 如何存储 IP 地址？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-054",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "有哪些常见的 SQL 优化手段？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-055",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "如何分析 SQL 的性能？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-056",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "读写分离和分库分表了解吗？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-057",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "深度分页如何优化？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-058",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "数据冷热分离如何做？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-059",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 性能怎么优化？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  }
+]

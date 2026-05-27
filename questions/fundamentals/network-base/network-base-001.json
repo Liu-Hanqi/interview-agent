@@ -1,0 +1,58 @@
+[
+  {
+    "id": "network-base-001",
+    "pool": "fundamentals",
+    "category": "network-base",
+    "difficulty": "medium",
+    "seed": "#åºç¨å±？",
+    "knowledge_anchors": [
+      "network-base",
+      "http"
+    ]
+  },
+  {
+    "id": "network-base-002",
+    "pool": "fundamentals",
+    "category": "network-base",
+    "difficulty": "medium",
+    "seed": "#ä¼ è¾å±？",
+    "knowledge_anchors": [
+      "tcp",
+      "network-base",
+      "udp",
+      "http"
+    ]
+  },
+  {
+    "id": "network-base-003",
+    "pool": "fundamentals",
+    "category": "network-base",
+    "difficulty": "medium",
+    "seed": "#ç½ç»å±？",
+    "knowledge_anchors": [
+      "network-base"
+    ]
+  },
+  {
+    "id": "network-base-004",
+    "pool": "fundamentals",
+    "category": "network-base",
+    "difficulty": "medium",
+    "seed": "#ç½ç»æ¥å£å±？",
+    "knowledge_anchors": [
+      "network-base"
+    ]
+  },
+  {
+    "id": "network-base-005",
+    "pool": "fundamentals",
+    "category": "network-base",
+    "difficulty": "medium",
+    "seed": "#æ»ç»？",
+    "knowledge_anchors": [
+      "tcp",
+      "network-base",
+      "http"
+    ]
+  }
+]

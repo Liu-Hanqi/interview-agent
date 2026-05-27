@@ -1,6 +1,7 @@
 """Score the candidate's answer using LLM evaluation."""
 
 import json
+import re
 
 from interview_agent.llm import generate
 from interview_agent.prompts import render
@@ -21,6 +22,7 @@ def _parse_json_response(raw: str) -> dict:
     """Parse JSON from LLM response, handling non-JSON and partial responses."""
     text = raw.strip()
     if not text:
+        # Graceful fallback: if LLM returns nothing, return empty structure
         return {}
 
     # Try direct parse first
@@ -30,15 +32,14 @@ def _parse_json_response(raw: str) -> dict:
         pass
 
     # Try to extract JSON from markdown code fences
-    import re
-    match = re.search(r"\{[^{}]*\}", text, re.DOTALL)
+    match = re.search(r"```json\s*(\{[^}]*\})", text, re.DOTALL)
     if match:
         try:
-            return json.loads(match.group())
+            return json.loads(match.group(1))
         except json.JSONDecodeError:
             pass
 
-    # Try broader extraction - find first { to last }
+    # Try broader extraction — find first { to last }
     try:
         start = text.index("{")
         end = text.rindex("}") + 1

@@ -1,0 +1,535 @@
+[
+  {
+    "id": "MySQL-001",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 基础？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-002",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "什么是关系型数据库？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-003",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "什么是 SQL？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-004",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "什么是 MySQL？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-005",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️MySQL 有什么优点？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-006",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 字段类型？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-007",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️整数类型的 UNSIGNED 属性有什么用？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-008",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "CHAR 和 VARCHAR 的区别是什么？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-009",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "VARCHAR(100)和 VARCHAR(10)的区别是什么？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-010",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "DECIMAL 和 FLOAT/DOUBLE 的区别是什么？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-011",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️DATETIME 和 TIMESTAMP 的区别是什么？如何选择？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-012",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "NULL 和 '' 的区别是什么？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-013",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️Boolean 类型如何表示？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-014",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️手机号存储用 INT 还是 VARCHAR？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-015",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 基础架构？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-016",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 存储引擎？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-017",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 支持哪些存储引擎？默认使用哪个？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-018",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 存储引擎架构了解吗？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-019",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️MyISAM 和 InnoDB 有什么区别？",
+    "knowledge_anchors": [
+      "MVCC",
+      "事务",
+      "redo log",
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-020",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MyISAM 和 InnoDB 如何选择？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-021",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️MySQL 索引？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-022",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "索引是什么？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-023",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "索引为什么快？",
+    "knowledge_anchors": [
+      "索引",
+      "B+树",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-024",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 索引底层数据结构是什么？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-025",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "为什么 InnoDB 没有使用哈希作为索引的数据结构？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-026",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "为什么 InnoDB 没有使用 B 树作为索引的数据结构？",
+    "knowledge_anchors": [
+      "B+树",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-027",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "什么是覆盖索引？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-028",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "请解释一下 MySQL 的联合索引及其最左前缀原则？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-029",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "SELECT * 会导致索引失效吗？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-030",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "哪些字段适合创建索引？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-031",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "索引失效的原因有哪些？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-032",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 查询缓存？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-033",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️MySQL 日志？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-034",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "⭐️MySQL 事务？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-035",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "什么是事务？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-036",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "什么是数据库事务？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-037",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "并发事务带来了哪些问题?",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-038",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "不可重复读和幻读有什么区别？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-039",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "并发事务的控制方式有哪些？",
+    "knowledge_anchors": [
+      "undo log",
+      "事务",
+      "MySQL",
+      "MVCC"
+    ]
+  },
+  {
+    "id": "MySQL-040",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "SQL 标准定义了哪些事务隔离级别?",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-041",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 的默认隔离级别是什么?",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-042",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 的隔离级别是基于锁实现的吗？",
+    "knowledge_anchors": [
+      "MySQL",
+      "MVCC"
+    ]
+  },
+  {
+    "id": "MySQL-043",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "MySQL 锁？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-044",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "表级锁和行级锁了解吗？有什么区别？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-045",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "行级锁的使用有什么注意事项？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-046",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "InnoDB 有哪几类行锁？",
+    "knowledge_anchors": [
+      "索引",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-047",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "共享锁和排他锁呢？",
+    "knowledge_anchors": [
+      "MySQL",
+      "MVCC"
+    ]
+  },
+  {
+    "id": "MySQL-048",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "意向锁有什么作用？",
+    "knowledge_anchors": [
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-049",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "当前读和快照读有什么区别？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  },
+  {
+    "id": "MySQL-050",
+    "pool": "fundamentals",
+    "category": "MySQL",
+    "difficulty": "medium",
+    "seed": "自增锁有了解吗？",
+    "knowledge_anchors": [
+      "事务",
+      "MySQL"
+    ]
+  }
+]

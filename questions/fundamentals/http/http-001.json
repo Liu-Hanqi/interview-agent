@@ -1,0 +1,277 @@
+[
+  {
+    "id": "http-001",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP åºæ¬æ¦å¿µ？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-002",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP æ¯ä»ä¹ï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-003",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP å¸¸è§çç¶æç æåªäºï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-004",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP å¸¸è§å­æ®µæåªäºï¼？",
+    "knowledge_anchors": [
+      "tcp",
+      "http"
+    ]
+  },
+  {
+    "id": "http-005",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#GET ä¸ POST？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-006",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#GET å POST æä»ä¹åºå«ï¼？",
+    "knowledge_anchors": [
+      "tcp",
+      "http"
+    ]
+  },
+  {
+    "id": "http-007",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#GET å POST æ¹æ³é½æ¯å®å¨åå¹ç­çåï¼？",
+    "knowledge_anchors": [
+      "https",
+      "http"
+    ]
+  },
+  {
+    "id": "http-008",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP ç¼å­ææ¯？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-009",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP ç¼å­æåªäºå®ç°æ¹å¼ï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-010",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#ä»ä¹æ¯å¼ºå¶ç¼å­ï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-011",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#ä»ä¹æ¯ååç¼å­ï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-012",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP ç¹æ§？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-013",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP/1.1 çä¼ç¹æåªäºï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-014",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP/1.1 çç¼ºç¹æåªäºï¼？",
+    "knowledge_anchors": [
+      "https",
+      "http"
+    ]
+  },
+  {
+    "id": "http-015",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP/1.1 çæ§è½å¦ä½ï¼？",
+    "knowledge_anchors": [
+      "tcp",
+      "http"
+    ]
+  },
+  {
+    "id": "http-016",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP ä¸ HTTPS？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-017",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP ä¸ HTTPS æåªäºåºå«ï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-018",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTPS è§£å³äº HTTP çåªäºé®é¢ï¼？",
+    "knowledge_anchors": [
+      "https",
+      "tcp",
+      "http"
+    ]
+  },
+  {
+    "id": "http-019",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTPS  æ¯å¦ä½å»ºç«è¿æ¥çï¼å¶é´äº¤äºäºä»ä¹ï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-020",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTPS çåºç¨æ°æ®æ¯å¦ä½ä¿è¯å®æ´æ§çï¼？",
+    "knowledge_anchors": [
+      "tcp",
+      "http"
+    ]
+  },
+  {
+    "id": "http-021",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTPS ä¸å®å®å¨å¯é åï¼？",
+    "knowledge_anchors": [
+      "https",
+      "http"
+    ]
+  },
+  {
+    "id": "http-022",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP/1.1ãHTTP/2ãHTTP/3 æ¼å？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-023",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP/1.1 ç¸æ¯ HTTP/1.0 æé«äºä»ä¹æ§è½ï¼？",
+    "knowledge_anchors": [
+      "http"
+    ]
+  },
+  {
+    "id": "http-024",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP/2 åäºä»ä¹ä¼åï¼？",
+    "knowledge_anchors": [
+      "https",
+      "tcp",
+      "http"
+    ]
+  },
+  {
+    "id": "http-025",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#HTTP/3 åäºåªäºä¼åï¼？",
+    "knowledge_anchors": [
+      "https",
+      "tcp",
+      "udp",
+      "http"
+    ]
+  },
+  {
+    "id": "http-026",
+    "pool": "fundamentals",
+    "category": "http",
+    "difficulty": "medium",
+    "seed": "#è¯»èé®ç­？",
+    "knowledge_anchors": [
+      "socket",
+      "http"
+    ]
+  }
+]

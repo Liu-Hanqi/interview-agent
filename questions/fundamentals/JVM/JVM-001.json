@@ -1,0 +1,351 @@
+[
+  {
+    "id": "JVM-001",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "Java 内存区域？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-002",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️Java 内存区域（运行时数据区）的组成？",
+    "knowledge_anchors": [
+      "运行时数据区",
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-003",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️哪个区域不会出现 OutOfMemoryError？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-004",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️哪些情况可能出现堆溢出？",
+    "knowledge_anchors": [
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-005",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "程序运行中栈可能会出现什么错误？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-006",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "堆内存的作用和组成？",
+    "knowledge_anchors": [
+      "GC",
+      "堆",
+      "JVM",
+      "栈"
+    ]
+  },
+  {
+    "id": "JVM-007",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️程序运行中堆可能会出现什么错误？",
+    "knowledge_anchors": [
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-008",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️为什么要将永久代 (PermGen) 替换为元空间 (MetaSpace) 呢?",
+    "knowledge_anchors": [
+      "GC",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-009",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "方法区常用参数有哪些？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-010",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️字符串常量池的作用是？",
+    "knowledge_anchors": [
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-011",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "JDK 1.7 为什么要将字符串常量池移动到堆中？",
+    "knowledge_anchors": [
+      "GC",
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-012",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "直接内存的作用是？",
+    "knowledge_anchors": [
+      "运行时数据区",
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-013",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "Java 对象的创建过程？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-014",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️对象访问定位的方式有哪些？",
+    "knowledge_anchors": [
+      "堆",
+      "JVM",
+      "栈"
+    ]
+  },
+  {
+    "id": "JVM-015",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "JVM 垃圾回收？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-016",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️如何判断对象是否死亡？",
+    "knowledge_anchors": [
+      "final",
+      "GC",
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-017",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "常见的引用类型有哪些？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-018",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "如何判断一个类是无用的类？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-019",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️垃圾回收算法有哪些？",
+    "knowledge_anchors": [
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-020",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️JDK 1.8 的默认垃圾回收器是？JDK1.9 之后呢？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-021",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️G1 垃圾回收的过程？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-022",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️ZGC 有哪些改进？",
+    "knowledge_anchors": [
+      "GC",
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-023",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️双亲委派模型？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-024",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "双亲委派模型指的是？",
+    "knowledge_anchors": [
+      "类加载器",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-025",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "如何打破打破双亲委派模型？",
+    "knowledge_anchors": [
+      "类加载器",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-026",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "⭐️问题排查？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-027",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "你知道哪些 Java 性能优化和问题排查工具？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-028",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "如何查看服务器上运行的 Java 进程？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-029",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "如何检测死锁？",
+    "knowledge_anchors": [
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-030",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "什么是 Heap Dump 文件？如何生成 Heap Dump 文件？",
+    "knowledge_anchors": [
+      "GC",
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-031",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "遇到 OutOfMemoryError 怎么排查解决？",
+    "knowledge_anchors": [
+      "索引",
+      "GC",
+      "堆",
+      "JVM"
+    ]
+  },
+  {
+    "id": "JVM-032",
+    "pool": "fundamentals",
+    "category": "JVM",
+    "difficulty": "medium",
+    "seed": "遇到过 GC 问题吗？怎么分析和解决的？",
+    "knowledge_anchors": [
+      "GC",
+      "JVM"
+    ]
+  }
+]

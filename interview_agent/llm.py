@@ -18,7 +18,7 @@ def _get_client() -> anthropic.Anthropic:
     if not api_key:
         raise ValueError("MINIMAX_CN_API_KEY not set")
     base_url = os.environ.get(
-        "MINIMAX_CN_BASE_URL", "https://api.minimaxi.com/v1"
+        "MINIMAX_CN_BASE_URL", "https://api.minimaxi.com/anthropic"
     )
     return anthropic.Anthropic(api_key=api_key, base_url=base_url)
 
@@ -29,7 +29,12 @@ def generate(
     model: Literal["claude-sonnet", "claude-haiku"] = "claude-sonnet",
     json_mode: bool = False,
 ) -> LLMResponse:
-    """Call MiniMax API via Anthropic-compatible endpoint."""
+    """Call MiniMax API via Anthropic-compatible endpoint.
+
+    Note: MiniMax's Anthropic-compatible endpoint does not correctly handle the
+    separate system= parameter — system content is prepended to the user message
+    instead (as a single user turn), which produces the expected behavior.
+    """
     client = _get_client()
 
     model_map = {
@@ -43,6 +48,7 @@ def generate(
         # MiniMax does not support response_format; prompt instructs JSON instead
         pass
 
+    # Use system= parameter directly — MiniMax respects it correctly
     message = client.messages.create(
         model=actual_model,
         max_tokens=1024,

@@ -18,13 +18,34 @@ def _format_history(history: list[Turn]) -> str:
 
 
 def _parse_json_response(raw: str) -> dict:
+    """Parse JSON from LLM response, handling non-JSON and partial responses."""
+    import re
+
     text = raw.strip()
-    for fence in ("```json", "```JSON", "```"):
-        if text.startswith(fence):
-            text = text[len(fence) :]
-        if text.endswith(fence):
-            text = text[: -len(fence)]
-    return json.loads(text.strip())
+    if not text:
+        return {}
+
+    # Try direct parse first
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # Try to extract JSON from markdown code fences
+    match = re.search(r"```json\s*(\{.*\})", text, re.DOTALL)
+    if match:
+        try:
+            return json.loads(match.group(1))
+        except json.JSONDecodeError:
+            pass
+
+    # Try broader extraction — find first { to last }
+    try:
+        start = text.index("{")
+        end = text.rindex("}") + 1
+        return json.loads(text[start:end])
+    except (ValueError, json.JSONDecodeError):
+        return {}
 
 
 def generate_followup(state: InterviewState) -> InterviewState:
