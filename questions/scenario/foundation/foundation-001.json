@@ -1,0 +1,181 @@
+[
+  {
+    "id": "scenario-foundation-001",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "假设你在设计一个日活千万级的电商秒杀系统，核心链路涉及库存扣减、订单创建、支付回调三个环节。团队在压测时发现现有方案在高并发场景下出现了严重的库存超卖、响应超时和内存溢出问题。如果让你重新设计这个系统的并发核心模块，你会从哪些维度来考虑？",
+    "knowledge_anchors": [
+      "线程池参数调优",
+      "锁粒度选择",
+      "并发容器选型",
+      "CAS与synchronized",
+      "队列缓冲策略",
+      "并发安全边界"
+    ],
+    "depth_trigger_pattern": "候选人仅罗列技术点而缺乏系统性分析维度时触发追问；能结合秒杀场景特性识别出库存一致性、响应延迟、资源利用率三个核心矛盾并提出解决思路时进入深度追问；能针对具体环节（如库存扣减）权衡多种方案（分布式锁、CAS、消息队列）的适用条件和取舍并给出可落地的参数配置时追问至方案实现细节。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-002",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "假设你负责设计一个高并发的电商秒杀系统缓存层，在压测中发现部分接口响应时间波动很大，经排查发现是缓存层的问题，你能介绍一下你对这个缓存架构的设计思路吗？",
+    "knowledge_anchors": [
+      "缓存穿透",
+      "缓存击穿",
+      "缓存雪崩",
+      "本地缓存",
+      "Redis双层架构",
+      "热点key处理"
+    ],
+    "depth_trigger_pattern": "候选人能够清晰描述本地缓存与Redis的协作机制，能够识别出提到的场景可能涉及缓存穿透、击穿或雪崩问题，并开始讨论相应的解决策略。如果只是泛泛而谈缺少对具体问题的分析，则需要进一步引导。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-003",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "你们的电商系统需要在用户下单后，依次完成【库存锁定 → 支付扣款 → 物流分配】三个步骤，每个步骤都有对应的消息消费者。现在你发现部分用户反映订单状态异常，有些用户扣了款但没发货，有些用户锁了库存在支付环节超时后库存没释放。请从消息队列的角度分析一下这个问题，并说说你的解决方案。",
+    "knowledge_anchors": [
+      "消息顺序保证",
+      "消息幂等",
+      "延迟队列",
+      "Kafka分区策略",
+      "RocketMQ延时消息",
+      "消费确认机制"
+    ],
+    "depth_trigger_pattern": "候选人仅停留在'给每个步骤加唯一ID'的表层方案，未涉及顺序消费的具体实现机制（如Hash取模、消息分组）；或者候选人提到了Kafka但未讨论其不支持延时的缺陷，也未提出RocketMQ作为替代方案；或者给出了多种技术选型但未分析各方案在异常恢复、数据一致性上的trade-off。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-004",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "假设你需要设计一个分布式缓存系统，数据量预估有1000万key，QPS要求10万+，需要支持节点动态扩缩容，你会怎么设计数据分片策略？",
+    "knowledge_anchors": [
+      "一致性hash",
+      "虚拟节点",
+      "数据分片/分桶",
+      "Leader选举",
+      "Raft协议",
+      "CAP权衡"
+    ],
+    "depth_trigger_pattern": "当候选人开始区分静态hash分片与一致性hash的优劣，并提及虚拟节点解决数据倾斜问题时，触发关于一致性hash实现细节的追问；当候选人主动联系到高可用性需求，提及需要Leader选举机制时，触发Raft相关追问；当候选人能在多个维度（扩展性、一致性、复杂性）之间做权衡分析时，触发更深层的架构取舍追问。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-005",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "你们团队突然收到告警，说线上某台服务器的GC频率从之前的每分钟1-2次突然飙升到每分钟10多次，而且每次GC后堆内存并没有明显下降。作为负责人，你会怎么排查这个问题？请描述你的排查思路和可能的原因。",
+    "knowledge_anchors": [
+      "GC日志分析",
+      "对象年龄与晋升阈值",
+      "堆外内存（DirectByteBuffer）",
+      "Metaspace元空间",
+      "类加载器泄漏",
+      "Full GC触发条件"
+    ],
+    "depth_trigger_pattern": "当候选人开始描述具体的排查步骤和工具使用后，面试官会追问其发现堆内存下降不明显时是否考虑过堆外内存或Metaspace的可能性，以及是否了解不同GC算法下Full GC的触发机制差异。回答中出现“对象年龄过大”、“GC频率高”等表面现象时，会触发对根本原因的深入追问。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-006",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "假设你现在负责一个日均订单量50万的中型电商系统，最近技术团队在促销高峰期（并发订单量达到平时的8倍）发现系统出现严重卡顿，大量用户反馈下单页面响应超时，数据库服务器的CPU一度飙到90%以上。技术团队排查时发现订单表出现大量锁等待事件。请你谈谈这种情况下，你打算如何定位和解决这个问题？",
+    "knowledge_anchors": [
+      "锁等待超时",
+      "慢查询分析",
+      "索引优化",
+      "连接池配置",
+      "事务隔离级别",
+      "热点行竞争"
+    ],
+    "depth_trigger_pattern": "候选人仅从单一维度（如只提索引或只提连接池）泛泛而谈，缺乏对问题本质的深入分析，或者无法解释锁冲突与慢查询之间的关联性，以及连接池参数与数据库性能的关系",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-007",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "假设你负责设计一个秒杀系统，库存扣减环节需要用Redis分布式锁保证数据一致性，请讲讲你打算怎么做？",
+    "knowledge_anchors": [
+      "SETNX + 过期时间",
+      "Watch Dog 看门狗机制",
+      "锁超时与自动续期",
+      "可重入锁",
+      "主从架构脑裂问题"
+    ],
+    "depth_trigger_pattern": "候选人仅描述了SETNX + EXPIRE的基本加锁流程，没有提及这两个操作需要保证原子性，或遗漏了锁续期机制；或者只考虑了单机Redis场景，未涉及主从切换时的锁可靠性问题。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-008",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "你们公司最近在重构一个商品详情页面，之前接口响应时间比较长，老板让团队把能并行获取的数据都改成并行加载，比如商品基本信息、库存、促销信息、用户评价等。现在改造完了，但是压测时发现并发量一上来，系统的CPU和内存就开始打满，甚至出现雪崩。请你说说，如果让你来排查和解决这个问题，你会从哪些方面入手？",
+    "knowledge_anchors": [
+      "CompletableFuture",
+      "异步编排",
+      "响应式流背压",
+      "线程池隔离",
+      "异常传播与处理",
+      "下游服务限流"
+    ],
+    "depth_trigger_pattern": "当候选人开始讨论具体的异步实现方案（如allOf/anyOf组合、线程池配置策略），能够识别出资源竞争和级联失败的根因，并提及背压或流控机制时，说明已进入深度技术探讨阶段。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-009",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "假设你在负责一个电商平台的订单服务，最近双十一大促期间，系统频繁出现级联雪崩，库存服务超时导致整个订单系统不可用。请谈谈你会如何从微服务治理的角度来解决这个问题？",
+    "knowledge_anchors": [
+      "熔断器模式（Circuit Breaker）",
+      "Sentinel流量控制与熔断规则",
+      "超时策略配置",
+      "服务链路追踪（TraceId/SpanId）",
+      "降级策略与Fallback机制",
+      "异常比例/异常数熔断策略"
+    ],
+    "depth_trigger_pattern": "当候选人的回答仅停留在'需要加熔断'或'需要设置超时'的概念层面，缺乏对熔断器状态机转换、异常比例阈值选取依据、Sentinel规则配置的实践细节、以及链路追踪如何定位跨服务调用瓶颈等核心机制的深入阐述时，将触发深度追问。",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  },
+  {
+    "id": "scenario-foundation-010",
+    "pool": "scenario",
+    "category": "foundation",
+    "difficulty": "hard",
+    "seed": "你们最近上线了一个新的数据导出功能，结果在压测时发现接口响应时间从200ms飙升到8秒，机器CPU也出现明显尖刺。作为后端负责人，你会怎么定位这个性能问题？",
+    "knowledge_anchors": [
+      "火焰图",
+      "trace日志",
+      "SQL日志分析",
+      "JVM堆内存",
+      "批量查询",
+      "N+1问题"
+    ],
+    "depth_trigger_pattern": "候选人能准确识别出性能瓶颈位置（如SQL查询、GC、序列化等），并能说出至少一种对应的分析工具或方法，说明进入了深度探讨阶段",
+    "expected_depth": 3,
+    "typical_duration_rounds": 3
+  }
+]

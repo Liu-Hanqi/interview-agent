@@ -1,0 +1,180 @@
+[
+  {
+    "id": "scenario-business-001",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "假设你在设计一个在线酒店预订系统，用户选择房间后进入支付环节，但这个过程中你发现库存管理出现了问题：用户查询时明明有房，但下单时却提示库存不足。请从库存管理的角度分析一下这个问题可能出在哪里。",
+    "knowledge_anchors": [
+      "预扣库存",
+      "超时释放",
+      "超售防护",
+      "状态机",
+      "并发控制",
+      "分布式锁"
+    ],
+    "depth_trigger_pattern": "候选人能够清晰分析出超售的原因，并主动提及预扣库存机制、超时释放策略、状态流转逻辑等技术实现细节，或讨论了如何通过状态机确保库存状态的一致性和可追溯性。",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-002",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "假设你负责一个跨境电商平台的价格计算模块，系统需要同时支持多币种结算、多种促销活动以及用户价格保护机制。当用户下单时，系统需要计算最终支付金额，其中汇率可能随时变动、促销活动可能存在叠加或互斥关系、同时平台承诺差价保护。如果让你来设计这个价格计算服务，你会如何考虑？",
+    "knowledge_anchors": [
+      "汇率转换",
+      "促销叠加规则",
+      "差价保护机制",
+      "事务一致性",
+      "价格快照",
+      "精度处理"
+    ],
+    "depth_trigger_pattern": "候选人回答仅聚焦于单一模块（如只谈汇率处理或只谈促销规则）而未体现对三个机制之间相互影响的理解时，需要追问关联场景；当回答停留在功能描述层面缺乏技术实现考量时，需要深入技术细节；当未提及异常边界情况（如汇率突变、促销冲突、数据一致性）时，需要追问边界处理。",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-003",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "在电商交易场景中，用户点击下单按钮后可能会因为网络延迟或前端重复点击导致短时间内发起多次请求，请问你会如何确保这些请求最终只生成一条订单记录？",
+    "knowledge_anchors": [
+      "幂等Token",
+      "唯一约束",
+      "状态机",
+      "防重表",
+      "分布式锁",
+      "补偿机制"
+    ],
+    "depth_trigger_pattern": "候选人仅能描述单一防护手段（如仅提及前端按钮防抖或仅依赖数据库唯一索引），但无法从系统层面阐述全局幂等保障方案；或者候选人能说出Token方案但未提及Token的生成、存储和验证机制细节；或者候选人对订单状态的转换条件描述不完整，未考虑并发和异常场景下的状态一致性。",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-004",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "你负责一个民宿短租平台，需要从多家供应商批量拉取房源数据，但发现各家的数据格式、更新频率、数据质量差异很大，在同步过程中还经常出现价格和库存的冲突，请问你会怎么设计这个数据同步系统？",
+    "knowledge_anchors": [
+      "数据映射与ETL",
+      "动态优先级调度",
+      "价格库存冲突处理策略",
+      "幂等性设计",
+      "实时性vs准确性权衡",
+      "版本控制与增量同步"
+    ],
+    "depth_trigger_pattern": "候选人仅停留在技术实现层面（如只讨论API调用和数据存储），没有主动分析业务场景中的优先级判断和冲突处理策略；或回答过于理想化，缺乏对异常情况（如数据不一致、供应商超时）的考虑。",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-005",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "假设你现在负责一个电商平台的用户权益系统，用户有会员等级、积分余额和各种优惠券库存，请你简单介绍一下你会如何设计这套系统的核心架构？",
+    "knowledge_anchors": [
+      "会员等级升降级策略",
+      "积分获取与消费机制",
+      "优惠券核销原子性",
+      "事务一致性与幂等性",
+      "并发控制与防薅羊毛"
+    ],
+    "depth_trigger_pattern": "候选人回答只描述了表层业务逻辑（如会员等级划分、积分兑换规则、优惠券使用流程），没有深入讨论实现层面的技术挑战，或者遗漏了积分通胀、并发扣减、等级计算时点等关键问题",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-006",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "假设你负责一个日均千万级别的电商搜索系统，运营团队近期频繁收到用户反馈：搜索结果前几页的商品还算满意，但第3页之后的商品质量明显下降，甚至出现完全不相关的商品。你打算如何系统性地分析和解决这个问题？",
+    "knowledge_anchors": [
+      "分页深度限制",
+      "相关性打分",
+      "排序权重配置",
+      "用户行为数据",
+      "性能与体验平衡"
+    ],
+    "depth_trigger_pattern": "当候选人不仅描述现象，而是能够深入分析问题的技术根源，并主动提出多个可能的解决方案，同时展现出对用户体验和技术实现复杂性的平衡思考时。",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-007",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "你负责的APP日活已达500万，最近业务方反馈推送的送达率只有60%左右，用户投诉说收不到推送通知。作为推送系统的技术负责人，你打算如何定位和解决这个问题？",
+    "knowledge_anchors": [
+      "设备Token管理",
+      "推送通道",
+      "离线消息队列",
+      "送达率监控",
+      "消息优先级",
+      "用户画像"
+    ],
+    "depth_trigger_pattern": "当候选人能够从整体架构角度分析问题，提到Token管理、通道选择、监控指标等模块时，说明具备基础认知，可进一步追问各模块的具体实现细节和边界情况处理",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-008",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "你们的APP最近收到用户反馈说有账号被盗用的情况，用户反映收到异地登录的提醒。作为后端负责人，你需要设计一套完整的风控检测机制来识别和防范这类异常行为，你会从哪些维度入手？",
+    "knowledge_anchors": [
+      "IP画像",
+      "接口限流",
+      "异地登录检测",
+      "设备指纹",
+      "风险评分",
+      "黑名单"
+    ],
+    "depth_trigger_pattern": "当候选人开始讨论具体检测维度时，面试官可以追问每个维度的具体实现细节和阈值设计；当提及风险评分体系时，可以深入探讨评分模型的设计思路和权重分配；当讨论到响应策略时，面试官会追问不同风险等级的处理方式差异；当候选人提到IP画像时，会自然引发对IP画像具体构建方法和数据维度的追问",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-009",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "你负责一个聚合支付平台的运营结算工作，某天商户反馈收到的日结算金额与交易流水不符，涉及平台方、服务费和代理商分润等多个角色，你会如何定位这笔差异？",
+    "knowledge_anchors": [
+      "对账周期",
+      "交易流水",
+      "分账比例",
+      "差错处理",
+      "退款冲正",
+      "轧差平账"
+    ],
+    "depth_trigger_pattern": "如果候选人只停留在'检查数据'或'联系商户'的表面操作，未能提及对账的时效性、分账链条中各角色责任划分、差异分类处理机制、或自动平账与人工介入的边界，说明对复杂分账场景缺乏体系化理解，需要追问具体流程设计",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  },
+  {
+    "id": "scenario-business-010",
+    "pool": "scenario",
+    "category": "business",
+    "difficulty": "medium",
+    "seed": "某电商平台计划上线限时秒杀活动，峰值QPS预计达到10万级别。作为技术负责人，你会从哪些维度设计技术方案？",
+    "knowledge_anchors": [
+      "库存预热",
+      "缓存",
+      "削峰",
+      "限流",
+      "一人一单",
+      "防超卖"
+    ],
+    "depth_trigger_pattern": "候选人回答仅停留在表层概念，如只说'用Redis存库存'或'加个限流'，缺乏对具体实现细节、数据一致性、异常场景的深入思考；或者无法区分不同技术手段的适用场景和权衡。",
+    "expected_depth": 2,
+    "typical_duration_rounds": 2
+  }
+]
